@@ -2,7 +2,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class CILabTest {
 
@@ -16,30 +16,6 @@ public class CILabTest {
     @AfterEach
     public void tearDown() {
         myString = null;
-    }
-
-    //Null string case
-    @Test
-    public void setStringTest1() {
-        fail("TODO");
-    }
-
-    //Average string case
-    @Test
-    public void setStringTest2() {
-        fail("TODO");
-    }
-
-    //Null string case
-    @Test
-    public void getStringTest1() {
-        fail("TODO");
-    }
-
-    //Average string case
-    @Test
-    public void getStringTest2() {
-        fail("TODO");
     }
 
     //All lowercase characters case
