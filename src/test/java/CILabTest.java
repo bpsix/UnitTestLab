@@ -21,26 +21,33 @@ public class CILabTest {
     //All lowercase characters case
     @Test
     public void detectCapitalUseTest1() {
-       fail("Not yet implemented");
-
+       myString.setString("abcdefghijklmnopqrstuvwxyz");
+       boolean allCaps = myString.detectCapitalUse();
+       assertFalse(allCaps);
     }
 
     //Only first letter capitalized case
     @Test
     public void detectCapitalUseTest2() {
-        fail("Not yet implemented");
+        myString.setString("Apple");
+        boolean allCaps = myString.detectCapitalUse();
+        assertFalse(allCaps);
     }
 
     //All capital letters case
     @Test
     public void detectCapitalUseTest3() {
-        fail("TODO");
+        myString.setString("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+        boolean allCaps = myString.detectCapitalUse();
+        assertTrue(allCaps);
     }
 
     //Contains non-letter characters case
     @Test
     public void detectCapitalUseTest4() {
-        fail("TODO");
+        myString.setString("5%#$*#aaGJSAFGL7*%&(@(?");
+        boolean allCaps = myString.detectCapitalUse();
+        assertFalse(allCaps);
     }
 
 
