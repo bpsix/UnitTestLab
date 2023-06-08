@@ -11,10 +11,15 @@ public class CILab implements CILabInterface {
         myString = string;
     }
 
+    /*Checks if this.myString contains all capital characters
+      If it does, return true. Otherwise, return false.
+    */
     @Override
     public boolean detectCapitalUse() {
-        return false;
+        for(int i = 0; i < myString.length(); i++) {
+            char c = myString.charAt(i);
+            if(Character.isLowerCase(c) || !Character.isAlphabetic(c)) return false;
+        }
+        return true;
     }
-
 }
-
